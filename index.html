@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bg-slate-100 header">
+            <h1 class="text-4xl ">Library</h1>
+            <button id="addBook">+ Add Book</button>
+        </div>
+        <div class="cardArea" id="cardArea">
+
+        </div>
+        <div class="popUp hidden" id="popUp">
+            <form class="addBookForm" action="">
+                <label for="title">Title:
+                    <input type="text" name="title"  id="title" placeholder="The Title Of The Book">
+                </label>
+                <label for="author">Author:
+                    <input type="text" name="author" id="author" placeholder="Author Of The Book">
+                </label>
+                <label for="pages">Number of pages:
+                    <input type="number" name="pages" id="pages">
+                </label>
+                <fieldset>
+                    <p>Have you read it?</p>
+                    <label for="yes">Yes
+                        <input class="readItCheck" type="radio" name="yesOrNo" id="yes">
+                    </label>
+                    <label for="no">No
+                        <input class="readItCheck" type="radio" name="yesOrNo" id="no">
+                    </label>
+                </fieldset>
+               
+                <button id="addToLib" type="button">Add To Library</button>
+            </form>
+            
+            
+        </div>
+        
+    </div>
+</body>
+</html>
